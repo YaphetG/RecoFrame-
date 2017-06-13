@@ -1,3 +1,4 @@
+package EngineFramework;
 
 public abstract class AUser implements IModel {
 

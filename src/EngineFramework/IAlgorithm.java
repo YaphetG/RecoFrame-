@@ -1,3 +1,4 @@
+package EngineFramework;
 
 public interface IAlgorithm {
 	//define algorithm template here

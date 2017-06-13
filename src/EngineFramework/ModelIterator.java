@@ -1,3 +1,4 @@
+package EngineFramework;
 
 public interface ModelIterator {
 	public boolean hasNext();

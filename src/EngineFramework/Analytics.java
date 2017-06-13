@@ -1,3 +1,4 @@
+package EngineFramework;
 
 public enum Analytics {
 	INSTANCE;
