@@ -16,6 +16,13 @@ public class ModelCollection {
 	public List<IModel> getCollection(){
 		return this.collection;
 	}
+	public boolean add(IModel model){
+		return collection.add(model);
+		
+	}
+	public boolean remove(int index){
+		return collection.remove(index) != null;
+	}
 	
 
 }

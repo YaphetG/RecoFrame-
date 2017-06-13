@@ -2,7 +2,7 @@ package EngineFramework;
 
 public interface IModel {
 	
-	public IModel CreateModel();
+	public  IModel CreateModel();
 	
 
 }
