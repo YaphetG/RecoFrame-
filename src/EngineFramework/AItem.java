@@ -2,9 +2,16 @@ package EngineFramework;
 
 public abstract class AItem implements IModel {
 
-	protected long id;
-	//To-do Add generic feilds 
+	
+	protected String id;
 	@Override
-	public abstract IModel CreateModel();
+	public IModel clone(){
+		try{
+			return (AItem)super.clone();
+		}catch(CloneNotSupportedException e){
+			// TODO Implement logger or something here
+		}
+		return null;
+	}
 
 }
