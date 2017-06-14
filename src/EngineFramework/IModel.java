@@ -1,8 +1,9 @@
 package EngineFramework;
 
-public interface IModel {
+public interface IModel extends Cloneable{
 	
-	public  IModel CreateModel();
 	
+	public String getId();
+	public void SetId(String s);
 
 }

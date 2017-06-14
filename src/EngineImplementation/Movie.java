@@ -1,6 +1,7 @@
 package EngineImplementation;
 
 import EngineFramework.AItem;
+import EngineFramework.IModel;
 
 public class Movie extends AItem {
 	private String title;	
@@ -22,15 +23,15 @@ public class Movie extends AItem {
 		this.genre = genre;
 	}
 
-	private Movie(){
-		super();
-	}	
-	
 	@Override
-	public AItem CreateModel() {
-		// TODO Auto-generated method stub
-		return new Movie();
+	public String getId() {
+		
+		return this.id;
 	}
-	
 
+	@Override
+	public void SetId(String s) {
+		this.id = s;
+		
+	}
 }

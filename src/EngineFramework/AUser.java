@@ -1,10 +1,18 @@
 package EngineFramework;
 
 public abstract class AUser implements IModel {
-
-	protected long id;
-	//To-do Add generic feilds 
+	protected String id;
 	@Override
-	public abstract IModel CreateModel();
+	public  IModel clone(){
+		try{
+			return (AUser)super.clone();
+		}catch(CloneNotSupportedException e){
+			// TODO implement logger or something for errors
+		}
+		return null;
+		
+	}
 
+	
+	
 }
