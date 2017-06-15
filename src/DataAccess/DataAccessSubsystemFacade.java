@@ -1,5 +1,6 @@
 package DataAccess;
 
+
 public class DataAccessSubsystemFacade implements DataAccessSubsystem {
 	IDataAction action;
 	ConnectionStrategy strategy;
@@ -36,5 +37,11 @@ public class DataAccessSubsystemFacade implements DataAccessSubsystem {
 		// Implement
 
 	}
+
+
+	
+
+
+
 
 }
