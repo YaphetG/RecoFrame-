@@ -14,12 +14,14 @@ the facade provides Encapsulation to the dataBase Subsystem providing only requi
 
 * Design patterns left to use, visitor and one structural (this info is for our team)
 */
+
 import java.util.List;
 
 import DataAccess.DataAccessSubsystemFacade;
+import EngineFramework.ModelCollection;
 
 public abstract class UserCollector implements DataCollector {
 	
 	DataAccessSubsystemFacade dataAccess;
-	public abstract List<IModel> getModelCollection();
+	public abstract List<ModelCollection> getModelCollection();
 }

@@ -2,10 +2,12 @@ package DataCollectionFrameWork;
 
 import java.util.List;
 
+
 import DataAccess.DatabaseException;
+import EngineFramework.ModelCollection;
 
 public interface DataCollector {
-	public List<IModel> getModelCollection() throws DatabaseException;
+	public List<ModelCollection> getModelCollection() throws DatabaseException;
 		
 	
 

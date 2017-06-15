@@ -1,5 +1,6 @@
 package DataAccess;
 
+import DataCollectionFrameWork.RecomEngineProduct;
 
 public class DataAccessSubsystemFacade implements DataAccessSubsystem {
 	IDataAction action;
@@ -36,6 +37,13 @@ public class DataAccessSubsystemFacade implements DataAccessSubsystem {
 	public void atomicRead() throws DatabaseException {
 		// Implement
 
+	}
+
+	@Override
+	public void write(RecomEngineProduct recommendation) throws DatabaseException {
+		// TODO Auto-generated method stub
+		action.write();
+		
 	}
 
 

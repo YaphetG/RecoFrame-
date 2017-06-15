@@ -4,7 +4,7 @@ package DataAccess;
 import java.sql.PreparedStatement;
 import java.util.logging.Logger;
 
-public class DataAction implements DataActionMediator{
+public class DataAction implements IDataAction{
 	
 	
 	
@@ -34,5 +34,11 @@ protected ConnectionPool pool =ConnectionPool.INSTANCE;
 		prepStatement.getPreparedStatement();
 	}
 		// TODO Auto-generated method stub
+
+	@Override
+	public void write() {
+		// TODO Auto-generated method stub
+		
+	}
 		
 	}

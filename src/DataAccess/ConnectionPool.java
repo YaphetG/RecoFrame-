@@ -1,6 +1,6 @@
 package DataAccess;
 
-enum ConnectionPool {
+enum ConnectionPool implements Connection {
 	INSTANCE;
 	
 	ConnectionPool() {
