@@ -1,9 +1,13 @@
-package EngineImplementation;
+package DataCollectionImpl;
 
-import EngineFramework.AItem;
-import EngineFramework.IModel;
+import DataCollectionFrameWork.AItem;
+import DataCollectionFrameWork.IModel;
 
 public class Movie extends AItem {
+	Movie() {
+		// TODO Auto-generated constructor stub
+	}
+
 	private String title;	
 	private String genre;
 	

@@ -1,5 +1,7 @@
 package EngineFramework;
 
+import DataCollectionFrameWork.IModel;
+
 public class Iterator implements ModelIterator {
 	private ModelCollection collection;
 	private int index=0;

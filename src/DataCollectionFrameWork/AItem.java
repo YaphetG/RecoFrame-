@@ -1,8 +1,6 @@
-package EngineFramework;
+package DataCollectionFrameWork;
 
 public abstract class AItem implements IModel {
-
-	
 	protected String id;
 	@Override
 	public IModel clone(){

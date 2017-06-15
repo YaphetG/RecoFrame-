@@ -1,10 +1,15 @@
-package DataAccess;
+package DataAccessImpl;
 
 //import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.util.logging.Logger;
 
-public class DataAction implements DataActionMediator{
+import DataAccess.BuildPrepStatement;
+import DataAccess.DatabaseException;
+import DataAccess.DbClass;
+import DataAccess.IDataAction;
+
+public class DataAction implements IDataAction{
 	
 	
 	
@@ -30,8 +35,8 @@ protected ConnectionPool pool =ConnectionPool.INSTANCE;
 
 	@Override
 	public void read() {
-		prepStatement= new ConcreteBuilder();
-		prepStatement.getPreparedStatement();
+		prepStatement = new PrepStatementDirector();
+		
 	}
 		// TODO Auto-generated method stub
 		

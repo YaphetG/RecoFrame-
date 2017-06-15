@@ -1,5 +1,7 @@
 package EngineFramework;
 
+import DataCollectionFrameWork.IModel;
+
 public interface ModelIterator {
 	public boolean hasNext();
 	public IModel next();

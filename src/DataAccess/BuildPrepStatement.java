@@ -1,8 +1,10 @@
 package DataAccess;
 
+/// To be finished, The DbAction uses Builder to 
+
 public interface BuildPrepStatement {
 	public void buildquery();
-	public void getPreparedStatement();
+	public PreparedStmt getPreparedStatement();
 	public  void buildParameters();
 	public void  buildparamTypes();
 

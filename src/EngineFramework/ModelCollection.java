@@ -2,6 +2,8 @@ package EngineFramework;
 import java.util.ArrayList;
 import java.util.List;
 
+import DataCollectionFrameWork.IModel;
+
 
 public class ModelCollection {
 	private List<IModel> collection;

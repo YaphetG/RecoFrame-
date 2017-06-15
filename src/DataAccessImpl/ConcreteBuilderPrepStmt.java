@@ -1,8 +1,11 @@
-package DataAccess;
+package DataAccessImpl;
 
 import java.sql.PreparedStatement;
 
-public class ConcreteBuilder implements BuildPrepStatement{
+import DataAccess.BuildPrepStatement;
+import DataAccess.PreparedStmt;
+
+public class ConcreteBuilderPrepStmt implements BuildPrepStatement{
 	protected PreparedStatement stmt;
 
 	@Override
@@ -11,11 +14,7 @@ public class ConcreteBuilder implements BuildPrepStatement{
 		
 	}
 
-	@Override
-	public void getPreparedStatement() {
 	
-		
-	}
 
 	@Override
 	public void buildParameters() {
@@ -27,6 +26,12 @@ public class ConcreteBuilder implements BuildPrepStatement{
 	public void buildparamTypes() {
 		// TODO Auto-generated method stub
 		
+	}
+
+	@Override
+	public PreparedStmt getPreparedStatement() {
+		// TODO Auto-generated method stub
+		return null;
 	}
 
 }

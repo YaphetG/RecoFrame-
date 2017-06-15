@@ -1,6 +1,7 @@
 package DataAccess;
 
-public interface DataActionMediator {
+public interface IDataAction {
+	
 	public void read();
 
 }

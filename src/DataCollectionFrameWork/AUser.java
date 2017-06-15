@@ -1,4 +1,4 @@
-package EngineFramework;
+package DataCollectionFrameWork;
 
 public abstract class AUser implements IModel {
 	protected String id;
