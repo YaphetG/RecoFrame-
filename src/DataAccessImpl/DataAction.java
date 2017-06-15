@@ -8,6 +8,7 @@ import DataAccess.BuildPrepStatement;
 import DataAccess.DatabaseException;
 import DataAccess.DbClass;
 import DataAccess.IDataAction;
+import DataAccess.PrepStatementDirector;
 
 public class DataAction implements IDataAction{
 	
@@ -21,6 +22,7 @@ protected PreparedStatement stmt;
 protected Object[] params;
 protected int[] paramTypes;
 protected DbClass concreteDbClass;
+protected PrepStatementDirector director;
 protected BuildPrepStatement prepStatement;
 protected ConnectionPool pool =ConnectionPool.INSTANCE;
 	DataAction() throws DatabaseException{
@@ -35,7 +37,9 @@ protected ConnectionPool pool =ConnectionPool.INSTANCE;
 
 	@Override
 	public void read() {
-		prepStatement = new PrepStatementDirector();
+		director= new PrepStatementDirector(prepStatement);
+		director.ConstructPrepStatement();
+		
 		
 	}
 		// TODO Auto-generated method stub
