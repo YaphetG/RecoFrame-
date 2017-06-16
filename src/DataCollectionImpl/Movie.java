@@ -1,24 +1,32 @@
 package DataCollectionImpl;
 
 import DataCollectionFrameWork.AItem;
-import DataCollectionFrameWork.IModel;
 
 public class Movie extends AItem {
 	Movie() {
 		// TODO Auto-generated constructor stub
 	}
-
-	private String title;	
-	private String genre;
 	
-	public String getTitle() {
-		return title;
+
+	 Movie(String id,String name, String genre,String year) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.genre = genre;
+		this.year = year;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+
+	private String name;	
+	private String genre;
+	private String id;
+	private String year;
+	
+	public String getName() {
+		return name;
 	}
 
+	
 	public String getGenre() {
 		return genre;
 	}

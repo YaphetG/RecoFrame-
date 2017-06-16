@@ -46,16 +46,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="6" language="java" name="DataAccess.IConnectionPool" project="RecoFrame" 
-    file="/RecoFrame/src/DataAccess/IConnectionPool.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-9" y="346"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <enumeration id="7" language="java" name="DataAccess.ConnectionPool" project="RecoFrame" 
+  <enumeration id="6" language="java" name="DataAccess.ConnectionPool" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/ConnectionPool.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="468" y="611"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -64,7 +55,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </enumeration>  
-  <class id="8" language="java" name="DataAccess.ItemDbClass" project="RecoFrame" 
+  <class id="7" language="java" name="DataAccess.ItemDbClass" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/ItemDbClass.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="137" y="355"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -73,7 +64,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="9" language="java" name="DataAccess.IDataAction" project="RecoFrame" 
+  <interface id="8" language="java" name="DataAccess.IDataAction" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/IDataAction.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1168" y="602"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -82,7 +73,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="10" language="java" name="DataAccess.PreparedStmt" project="RecoFrame" 
+  <interface id="9" language="java" name="DataAccess.PreparedStmt" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/PreparedStmt.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="277" y="346"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -91,17 +82,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <interface id="11" language="java" name="DataAccess.DataActionMediator" project="RecoFrame" 
-    file="/RecoFrame/src/DataAccess/DataActionMediator.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="654" y="602"/>    
-    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
-      sort-features="false" accessors="true" visibility="true">      
-      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
-      <operations public="true" package="true" protected="true" private="true" static="true"/>    
-    </display>  
-  </interface>  
-  <interface id="12" language="java" name="DataAccess.Connection" project="RecoFrame" 
-    file="/RecoFrame/src/DataAccess/Connection.java" binary="false" corner="BOTTOM_RIGHT">    
+  <interface id="10" language="java" name="DataAccess.Connections" project="RecoFrame" 
+    file="/RecoFrame/src/DataAccess/Connections.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1778" y="593"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
@@ -109,7 +91,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="13" language="java" name="DataAccess.DataAccessSubsystemFacade" project="RecoFrame" 
+  <class id="11" language="java" name="DataAccess.DataAccessSubsystemFacade" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/DataAccessSubsystemFacade.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1483" y="391"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -118,7 +100,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="14" language="java" name="DataAccess.DataAccessSubsystem" project="RecoFrame" 
+  <interface id="12" language="java" name="DataAccess.DataAccessSubsystem" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/DataAccessSubsystem.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1351" y="629"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -127,7 +109,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="15" language="java" name="DataAccess.ConcreteBuilder" project="RecoFrame" 
+  <class id="13" language="java" name="DataAccess.ConcreteBuilder" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/ConcreteBuilder.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1262" y="400"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -136,7 +118,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="16" language="java" name="DataAccess.ConnectionStrategy" project="RecoFrame" 
+  <interface id="14" language="java" name="DataAccess.ConnectionStrategy" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/ConnectionStrategy.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1584" y="602"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -145,7 +127,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="17" language="java" name="DataAccess.DatabaseException" project="RecoFrame" 
+  <class id="15" language="java" name="DataAccess.DatabaseException" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/DatabaseException.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="456" y="382"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -154,7 +136,7 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="DataAccess.ConnectionContext" project="RecoFrame" 
+  <class id="16" language="java" name="DataAccess.ConnectionContext" project="RecoFrame" 
     file="/RecoFrame/src/DataAccess/ConnectionContext.java" binary="false" corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1726" y="373"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -163,84 +145,112 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="19">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="2"/>  
-  </realization>  
-  <association id="20">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="21" name="connection"/>      
-      <multiplicity id="22" minimum="0" maximum="1"/>    
+  <association id="17">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="18" name="pool">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="19" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="12" navigable="true"/>    
+    <end type="TARGET" refId="6" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="20">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="21" name="strategy">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="22" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <realization id="23">    
-    <end type="SOURCE" refId="1"/>    
-    <end type="TARGET" refId="11"/>  
-  </realization>  
-  <association id="24">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="25" name="action"/>      
-      <multiplicity id="26" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="27">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="28" name="strategy"/>      
-      <multiplicity id="29" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="30">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="31" name="buildprepStatement"/>      
-      <multiplicity id="32" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="33">    
     <end type="SOURCE" refId="13"/>    
-    <end type="TARGET" refId="14"/>  
+    <end type="TARGET" refId="2"/>  
   </realization>  
-  <realization id="34">    
+  <realization id="24">    
     <end type="SOURCE" refId="5"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <association id="35">    
+  <association id="25">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="36" name="concreteDbClass"/>      
-      <multiplicity id="37" minimum="0" maximum="1"/>    
+      <attribute id="26" name="concreteDbClass">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="27" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="38">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="39" name="pool"/>      
-      <multiplicity id="40" minimum="0" maximum="1"/>    
+  <association id="28">    
+    <end type="SOURCE" refId="16" navigable="false">      
+      <attribute id="29" name="connection">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="30" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="10" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="41">    
-    <end type="SOURCE" refId="13" navigable="false">      
-      <attribute id="42" name="strategy"/>      
-      <multiplicity id="43" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="44">    
+  <association id="31">    
     <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="45" name="prepStatement"/>      
-      <multiplicity id="46" minimum="0" maximum="1"/>    
+      <attribute id="32" name="prepStatement">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="33" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="34">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="35" name="strategy">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="36" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="37">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="38" name="buildprepStatement">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="39" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="40">    
+    <end type="SOURCE" refId="11"/>    
+    <end type="TARGET" refId="12"/>  
+  </realization>  
+  <association id="41">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="42" name="action">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </attribute>      
+      <multiplicity id="43" minimum="0" maximum="1">        
+        <position height="0" width="0" x="0" y="0"/>      
+      </multiplicity>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 

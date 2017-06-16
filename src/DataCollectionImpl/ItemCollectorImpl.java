@@ -8,14 +8,21 @@ import DataAccess.DatabaseException;
 import DataCollectionFrameWork.ItemCollector;
 import EngineFramework.ModelCollection;
 
-public class MovieCollection extends ItemCollector {
+public class ItemCollectorImpl extends ItemCollector {
+	DataAccessSubsystem dataaccesss;
+	ModelCollection collection;
 
 	@Override
 	public List<ModelCollection> getModelCollection() throws DatabaseException {
-		DataAccessSubsystem dataAccess = new DataAccessSubsystemFacade();
-		dataAccess.read();
+		 dataaccesss = new DataAccessSubsystemFacade();
+		 dataaccesss.read();
+		 
+		 // the files that has been read and brought are then modified to only two attributes 
+		 //and populated to the entity class, put on collection list and returned; 
 		
+		collection.getCollection();
 		// TODO Auto-generated method stub
+		
 		return null;
 	}
 

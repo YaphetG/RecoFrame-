@@ -6,7 +6,7 @@ import DataAccess.DataAccessSubsystem;
 import DataAccess.DatabaseException;
 import EngineFramework.ModelCollection;
 
-public abstract class ItemCollection implements DataCollector{
+public abstract class ItemCollector implements DataCollector{
 	
 	
 	DataAccessSubsystem dataAccess;

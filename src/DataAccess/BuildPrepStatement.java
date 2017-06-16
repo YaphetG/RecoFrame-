@@ -9,9 +9,9 @@ package DataAccess;
 
 
 public interface BuildPrepStatement {
-	public void buildquery();
-	public PreparedStmt getPreparedStatement();
-	public  void buildParameters();
-	public void  buildparamTypes();
+	public void buildquery(DbClass db);
+	public Object getPreparedStatement();
+	public  void buildParameters(DbClass db);
+	public void  buildparamTypes(DbClass db);
 
 }

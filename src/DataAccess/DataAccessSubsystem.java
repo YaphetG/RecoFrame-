@@ -1,11 +1,13 @@
 package DataAccess;
 
+import java.sql.SQLException;
+
 import DataCollectionFrameWork.RecomEngineProduct;
 
 public interface DataAccessSubsystem {
 
 
-	public void establishConnection(String URL) throws DatabaseException;
+	public void establishConnection(String URL) throws DatabaseException, SQLException;
 
 	public void releaseConnection() throws DatabaseException;
 

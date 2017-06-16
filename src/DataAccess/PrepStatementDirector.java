@@ -1,5 +1,7 @@
 package DataAccess;
 
+import DataAccess.DbClass;
+
 public class PrepStatementDirector {
 	private BuildPrepStatement buildprepStatement;
 
@@ -7,13 +9,13 @@ public class PrepStatementDirector {
 		this.buildprepStatement = buildprepStatement;
 	}
 
-	public void ConstructPrepStatement() {
-		buildprepStatement.buildquery();
-		buildprepStatement.buildParameters();
-		buildprepStatement.buildparamTypes();
+	public void ConstructPrepStatement(DbClass db) {
+		buildprepStatement.buildquery(db);
+		buildprepStatement.buildParameters(db);
+		buildprepStatement.buildparamTypes(db);
 	}
 
-	public PreparedStmt getPrepStatement() {
+	public Object getPrepStatement() {
 		return buildprepStatement.getPreparedStatement();
 
 	}

@@ -1,18 +1,23 @@
 package DataAccess;
 
+import java.sql.SQLException;
+
+import DataAccessImpl.ConnectionStrategyImpl;
 import DataCollectionFrameWork.RecomEngineProduct;
 
 public class DataAccessSubsystemFacade implements DataAccessSubsystem {
 	IDataAction action;
 	ConnectionStrategy strategy;
-
+	
 	public DataAccessSubsystemFacade() {
 	}
 
 	@Override
-	public void establishConnection(String URL) throws DatabaseException {
+	public void establishConnection(String URL) throws DatabaseException, SQLException {
 		ConnectionContext connect = new ConnectionContext();
 		// Instantiate A strategyImplementation
+		
+		strategy = new ConnectionStrategyImpl();
 		// strategy= new "instance of ConnectionStrategy Implementation()";
 		connect.setStrategy(strategy);
 		connect.createConnection(URL);
@@ -29,6 +34,7 @@ public class DataAccessSubsystemFacade implements DataAccessSubsystem {
 	public void read() throws DatabaseException {
 		// Instantiate A DataAction here
 		// action= new Instance of IData
+		//action = new DataAction(DbClass db);
 		action.read();
 
 	}
