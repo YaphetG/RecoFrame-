@@ -3,18 +3,19 @@ package DataAccessImplementations;
 import java.sql.SQLException;
 
 import DataCollectionImplementations.MovieDbClass;
+import DataCollectionImplementations.RecommDbClass;
 import Exceptions.DatabaseException;
-import Framework.DataAccess.ConnectionContext;
-import Framework.DataAccess.ConnectionStrategy;
 import Framework.DataAccess.DataAccessSubsystemFacade;
 import Framework.DataAccess.DbClass;
 import Framework.DataAccess.IDataAction;
 import Framework.DataCollection.RecomEngineProduct;
+import Framework.Engine.ModelCollection;
 
 public class DataAccessSubsystemImpl implements DataAccessSubsystemFacade{
 	IDataAction action;
-	ConnectionStrategy strategy;
+	
 	DbClass moviedbclass;
+	DbClass recomdbclass;
 	
 	
 	public DataAccessSubsystemImpl() {
@@ -33,23 +34,13 @@ public class DataAccessSubsystemImpl implements DataAccessSubsystemFacade{
 	}
 
 	@Override
-	public void read() throws DatabaseException {
-		try {
-			ConnectionContext connect = new ConnectionContext();
-			
-			
-			strategy = new ConnectionStrategyImpl();
-			
-			connect.setStrategy(strategy);
-			connect.createConnection();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+	public ModelCollection read() throws DatabaseException {
+		ModelCollection collection;
 		moviedbclass = new MovieDbClass();
 		action= new DataAction(moviedbclass);
-		action.read();
-
+		collection = action.read();
+		
+		return collection;
 	}
 
 	@Override
@@ -60,21 +51,11 @@ public class DataAccessSubsystemImpl implements DataAccessSubsystemFacade{
 
 	@Override
 	public void write(RecomEngineProduct recommendation) throws DatabaseException {
-		try {
-			ConnectionContext connect = new ConnectionContext();
-			
-			
-			strategy = new KnowlegdeDbConnectionStrategyImpl();
-			
-			connect.setStrategy(strategy);
-			connect.createConnection();
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		
 		// TODO Auto-generated method stub
-		action = new DataAction(moviedbclass);
-		action.write();
+		recomdbclass= new RecommDbClass();
+		action = new DataAction(recomdbclass);
+		action.write(recommendation);
 		
 	}
 

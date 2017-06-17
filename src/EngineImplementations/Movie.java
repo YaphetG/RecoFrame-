@@ -3,17 +3,26 @@ package EngineImplementations;
 import Framework.DataCollection.AItem;
 
 public class Movie extends AItem {
-	private String title;	
-	private String genre;
 	
-	public String getTitle() {
-		return title;
+	
+
+	public Movie( String id, String genre, String year, String name) {
+		super(id, genre);
+	 this.name = name;
+	 this.year = year;
 	}
 
-	public void setTitle(String title) {
-		this.title = title;
+
+	private String name;	
+	private String genre;
+	private String id;
+	private String year;
+	
+	public String getName() {
+		return name;
 	}
 
+	
 	public String getGenre() {
 		return genre;
 	}
@@ -33,4 +42,11 @@ public class Movie extends AItem {
 		this.id = s;
 		
 	}
+
+
+	@Override
+	public String toString() {
+		return "Movie [name=" + name + ", genre=" + genre + ", id=" + id + ", year=" + year + "]";
+	}
+	
 }

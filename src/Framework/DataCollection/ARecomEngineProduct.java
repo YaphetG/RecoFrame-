@@ -1,6 +1,6 @@
 package Framework.DataCollection;
 
-public abstract class ARecomEngineProduct  implements RecomEngineProduct{
+public  class ARecomEngineProduct  implements RecomEngineProduct{
 	String id1;
 	String id2;
 	
@@ -11,6 +11,12 @@ public abstract class ARecomEngineProduct  implements RecomEngineProduct{
 		super();
 		this.id1 = id1;
 		this.id2 = id2;
+	}
+	public String getId1() {
+		return id1;
+	}
+	public String getId2() {
+		return id2;
 	}
 	@Override
 	public String toString() {

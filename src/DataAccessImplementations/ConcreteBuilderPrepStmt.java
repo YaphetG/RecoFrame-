@@ -42,7 +42,7 @@ public class ConcreteBuilderPrepStmt implements BuildPrepStatement {
 				e.printStackTrace();
 			}
 			
-			return stmt;
+			return query;
 		
 	}
 

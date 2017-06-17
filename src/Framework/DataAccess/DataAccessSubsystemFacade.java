@@ -4,6 +4,7 @@ import java.sql.SQLException;
 
 import Exceptions.DatabaseException;
 import Framework.DataCollection.RecomEngineProduct;
+import Framework.Engine.ModelCollection;
 
 public interface DataAccessSubsystemFacade {
 
@@ -12,7 +13,7 @@ public interface DataAccessSubsystemFacade {
 
 	public void releaseConnection() throws DatabaseException;
 
-	public void read() throws DatabaseException;
+	public ModelCollection read() throws DatabaseException;
 	public void write(RecomEngineProduct recommendation) throws DatabaseException;
 
 	public void atomicRead() throws DatabaseException;

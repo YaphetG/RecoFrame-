@@ -12,11 +12,12 @@ public class MovieCollection extends ItemCollector {
 
 	@Override
 	public ModelCollection getModelCollection() throws DatabaseException {
+		ModelCollection collection;
 		DataAccessSubsystemFacade dataAccess = new DataAccessSubsystemImpl();
-		dataAccess.read();
+		collection = dataAccess.read();
 		
 		// TODO Auto-generated method stub
-		return null;
+		return collection;
 	}
 
 }

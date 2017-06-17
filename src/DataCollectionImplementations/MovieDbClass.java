@@ -5,6 +5,7 @@ import java.sql.SQLException;
 
 import Exceptions.DatabaseException;
 import Framework.DataAccess.DbClass;
+import Framework.DataCollection.AItem;
 import Framework.Engine.ModelCollection;
 import Framework.Util.QueryType;
 
@@ -14,7 +15,7 @@ public class MovieDbClass implements DbClass {
 	
 	ConcreteModelFactory f;
 	QueryType queryType;
-	 String readQuery = "SELECT * FROM `movies` WHERE Genre = ?";
+	 String readQuery = "SELECT * FROM `movies` ";
 	String insertQuery = "INSERT INTO `movies` (`ID`, `Name`, `Genre`, `Year`) VALUES (?, ?, ?, ?);";
 	String updateQuery = "";
 	String deleteQuery = "?";
@@ -37,28 +38,38 @@ public class MovieDbClass implements DbClass {
 
 	
 	@Override
-	public void populateEntity(ResultSet rs) throws DatabaseException {
+	public void populateEntity(ResultSet rs) {
 		Movies = new ModelCollection();
-		try {
+		
 			String id = null;
 			String name = null;
 			String genre = null;
 			String year = null;
-			while(rs.next()) {
-				id = rs.getString("id").trim();
-				name = rs.getString("name").trim();
-				genre = rs.getString("genre").trim();
-				year = rs.getString("year").trim();
-				ConcreteModelFactory f= new ConcreteModelFactory();
-				Movie movieItem= (Movie) f.getItemInstance();
-				movieItem.setGenre(genre);
-				movieItem.SetId(id);
-				//Movies.add(movieItem);// factory 
+			try {
+				while(rs.next()) {
 				
+						id = rs.getString("id").trim();
+					System.err.println(id+"***************");
+					
+						name = rs.getString("Name").trim();
+					
+					genre = rs.getString("Genre").trim();
+					year = rs.getString("Year").trim();
+					ConcreteModelFactory f= new ConcreteModelFactory();
+					AItem movieItem= f.getItemInstance();
+					movieItem.setGenre(genre);
+					movieItem.SetId(id); 
+					Movies.add(movieItem);
+					}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
 			}
-		} catch(SQLException e) {
-			throw new DatabaseException(e);
-		}
+				
+				
+			
+			
+		
 		
 	}
 

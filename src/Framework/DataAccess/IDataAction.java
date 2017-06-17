@@ -1,8 +1,13 @@
 package Framework.DataAccess;
 
+
+
+import Framework.DataCollection.RecomEngineProduct;
+import Framework.Engine.ModelCollection;
+
 public interface IDataAction {
 	
-	public void read();
-	public void write();
+	public ModelCollection read();
+	void write(RecomEngineProduct recommendation);
 
 }

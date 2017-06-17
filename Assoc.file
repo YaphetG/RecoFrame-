@@ -1,0 +1,13 @@
+mov002,mov007
+	
+mov002,mov008
+	
+mov007,mov002
+	
+mov007,mov008
+	
+mov008,mov002
+	
+mov008,mov007
+	
+

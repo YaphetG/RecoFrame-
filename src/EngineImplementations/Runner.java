@@ -12,7 +12,9 @@ public class Runner {
 		
 		ModelCollection clln=null;
 		try {
+			
 			clln = (new MovieCollection()).getModelCollection();
+		System.out.println(clln);
 		} catch (DatabaseException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
@@ -31,11 +33,11 @@ public class Runner {
 	
 	
 	
-	private static ModelCollection getMovies(){
+	/*private static ModelCollection getMovies(){
 		Movie m = new Movie();
 		ModelCollection movieCollection = new ModelCollection();
 		
-		for(Integer i=0; i<100;i++/**/){
+		for(Integer i=0; i<100;i++){
 			m.SetId(i.toString());
 			char c =(char) ((i.intValue()+33)%94);
 			m.setTitle(new Character(c).toString());
@@ -47,7 +49,7 @@ public class Runner {
 			
 			
 		}
-		return movieCollection;
+		return movieCollection;*/
 	}
 
-}
+

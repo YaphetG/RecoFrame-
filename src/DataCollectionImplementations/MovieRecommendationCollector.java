@@ -6,6 +6,7 @@ import Framework.DataAccess.DataAccessSubsystemFacade;
 import Framework.DataCollection.ARecomEngineProduct;
 import Framework.DataCollection.IModel;
 import Framework.DataCollection.RecommendationCollector;
+import Framework.Engine.ModelCollection;
 
 public class MovieRecommendationCollector implements RecommendationCollector{
 
@@ -23,7 +24,8 @@ public class MovieRecommendationCollector implements RecommendationCollector{
 	}
 
 	@Override
-	public void read(IModel model) {
+	public ModelCollection read(IModel model) {
+		return null;
 		// TODO Auto-generated method stub
 		
 	}

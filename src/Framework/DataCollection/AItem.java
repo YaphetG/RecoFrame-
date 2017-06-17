@@ -1,15 +1,55 @@
 package Framework.DataCollection;
 
-public abstract class AItem implements IModel {
-	protected String id;
+public class AItem implements IModel {
+	
 	@Override
-	public IModel clone(){
-		try{
-			return (AItem)super.clone();
-		}catch(CloneNotSupportedException e){
-			// TODO Implement logger or something here
-		}
+	public String toString() {
+		return "AItem [genre=" + genre + ", id=" + id + "]";
+	}
+
+
+
+
+	protected String genre;
+	protected String id;
+	
+	
+	public AItem(String id, String genre) {
+		this.id = id;
+		this.genre = genre;
+		
+	}
+
+
+
+
+	@Override
+	public String getId() {
+		// TODO Auto-generated method stub
 		return null;
 	}
+
+
+	@Override
+	public void SetId(String s) {
+		// TODO Auto-generated method stub
+		
+	}
+
+
+
+
+	public String getGenre() {
+		return genre;
+	}
+
+
+
+
+	public void setGenre(String genre) {
+		this.genre = genre;
+	}
+	
+	
 
 }

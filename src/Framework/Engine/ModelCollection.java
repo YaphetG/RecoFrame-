@@ -24,6 +24,11 @@ public class ModelCollection {
 	public boolean remove(int index){
 		return collection.remove(index) != null;
 	}
+
+	@Override
+	public String toString() {
+		return "ModelCollection [collection=" + collection + "]";
+	}
 	
 
 }
