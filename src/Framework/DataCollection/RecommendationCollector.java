@@ -8,7 +8,7 @@ import Framework.Engine.ModelCollection;
 public interface RecommendationCollector {
  
 	public void save( ARecomEngineProduct recommendation);
-	public ModelCollection read(IModel model);
+	public ModelCollection read(String id);
 	
 	
 }

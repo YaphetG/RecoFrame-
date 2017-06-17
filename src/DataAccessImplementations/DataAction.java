@@ -1,6 +1,7 @@
 package DataAccessImplementations;
 
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -17,11 +18,6 @@ import Framework.Util.QueryType;
 
 public class DataAction implements IDataAction {
 
-	/*private static final Logger LOG = Logger.getLogger(DataAction.class.getName());
-	protected String query;
-	protected PreparedStatement stmt;
-	protected Object[] params;
-	protected int[] paramTypes;*/
 	QueryType querytype;
 	ConnectionStrategy strategy;
 	Connection con;
@@ -37,7 +33,7 @@ public class DataAction implements IDataAction {
 
 	}
 
-	DataAction(DbClass c) throws DatabaseException {
+	public DataAction(DbClass c) throws DatabaseException {
 		concreteDbClass = c;
 
 	}
@@ -57,29 +53,15 @@ public class DataAction implements IDataAction {
 		}
 		query = concreteDbClass.getQuery(querytype);
 	System.out.println(query);
-		
-		/*stmtBuilder = new ConcreteBuilderPrepStmt();
-		prepStatement = new PrepStatementDirector(stmtBuilder);
-		
-		prepStatement.ConstructPrepStatement(concreteDbClass);
-		
-		query =  (String) prepStatement.getPrepStatement();*/
-	
-			try {
+		try {
 				stmt = con.prepareStatement(query);
 			} catch (SQLException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 		
-		
-			
-			;
-			
-			
 			try {
 				ResultSet rs = stmt.executeQuery(query);
-				
 				concreteDbClass.populateEntity(rs);
 					} 
 			catch (DatabaseException e) {
@@ -89,25 +71,18 @@ public class DataAction implements IDataAction {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-				
-				
-			collection=	concreteDbClass.getModelCollection();
-			return collection;
 			
-			
-			
-			
-			
-		
-		
-		//ModelFactory f = new ItemFactory();
-		//IModel model = f.getModel();
-		
-		
-		
-		
+		collection=	getModelCollection(); 
+		return collection;
+	
 	}
 	// TODO Auto-generated method stub
+	public ModelCollection getModelCollection(){
+		ModelCollection collection = new ModelCollection();
+		collection=	concreteDbClass.getModelCollection();
+		return collection;  
+		
+	}
 
 	@Override
 	public void write(RecomEngineProduct recommendation) {
@@ -141,5 +116,7 @@ public class DataAction implements IDataAction {
 		// TODO Auto-generated method stub
 
 	}
+	
+	
 
 }

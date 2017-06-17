@@ -44,7 +44,11 @@ public class DataAccessSubsystemImpl implements DataAccessSubsystemFacade{
 	}
 
 	@Override
-	public void atomicRead() throws DatabaseException {
+	public ModelCollection atomicRead() throws DatabaseException {
+		ModelCollection collection; 
+		action= new DataAction(recomdbclass);
+		collection= action.read();
+		return collection;
 		// Implement
 
 	}

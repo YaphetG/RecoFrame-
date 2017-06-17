@@ -16,7 +16,7 @@ public interface DataAccessSubsystemFacade {
 	public ModelCollection read() throws DatabaseException;
 	public void write(RecomEngineProduct recommendation) throws DatabaseException;
 
-	public void atomicRead() throws DatabaseException;
+	public ModelCollection atomicRead() throws DatabaseException;
 
 	
 
